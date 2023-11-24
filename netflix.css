@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+.separation {
+  height: 7px;
+  background-color: rgb(46, 44, 44);
+}
+
+#main {
+  width: 100vw;
+  height: 83vh;
+  /* border: 2px solid red; */
+}
+
+#main::before {
+  content: "";
+  background-image: url(images/bg.jpg);
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+  filter: brightness(0.38);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transform: scale(1.25) translateY(-23.2%);
+}
+
+/* ------------------------- NAVBAR --------------------------- */
+
+#nav {
+  /* border: 2px solid green; */
+  display: flex;
+  margin: 1rem auto;
+  width: 80vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  width: 9.25rem;
+  height: 2.5rem;
+  color: rgb(229, 9, 20);
+}
+
+.btn {
+  background-color: #ff0000d6;
+  color: white;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #c11119;
+}
+
+.eng-btn {
+  color: white;
+  background-color: #f0f8ff00;
+  border: 1px solid #646161;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 0.43rem 1.3rem;
+}
+.eng-btn img {
+  margin: 0 2px 0 8px;
+}
+
+.sign-btn {
+  margin-left: 1rem;
+  font-weight: bold;
+  border-radius: 7px;
+  font-size: 12px;
+  padding: 0.45rem 1.3rem;
+}
+
+.sign-btn a {
+  text-decoration: none;
+}
+
+/* ------------------------- Main Content --------------------------- */
+
+#main-content {
+  /* border: 2px solid rgb(76, 0, 255); */
+  padding: 0 3rem;
+  width: 80vw;
+  margin: auto;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.main-heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.7rem;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: larger;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+.sign{
+  text-align: center;
+  /* border: 2px solid rgb(217, 192, 255); */
+}
+.sign-process {
+  display: flex;
+  justify-content: center;
+  /* border: 2px solid pink; */
+  gap: 5px;
+}
+
+.sign-process input {
+  padding: 1rem;
+  width: 26rem;
+  font-size: 1rem;
+  background: rgba(22, 22, 22, 0.7);
+  border: 1px solid #646161;
+  border-radius: 4px;
+}
+
+.sign-process .started {
+  padding: 0.9rem;
+  width: 13rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-radius: 8px;
+  /* margin-left: 0.5rem; */
+}
+
+.icon {
+  font-size: 1.3rem;
+  margin-left: 10px;
+}
+
+/* ------------------------- Feachers --------------------------- */
+
+.feachers {
+  /* border: 2px solid yellow; */
+  width: 80vw;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 3.5rem 0;
+}
+
+.heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.7rem;
+  font-weight: 750;
+  margin-bottom: 15px;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* gap: 12px; */
+}
+
+.feacher-Img {
+  position: relative;
+}
+
+.feacher-Img img {
+  /* width: 555px; */
+  width: 39vw;
+  position: relative;
+  z-index: 1;
+}
+
+.feacher-Img video {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 86%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.feacher-third img{
+  width: 39vw;
+  position: relative;
+  z-index: 1;
+}
+.feacher-Img .third {   
+  z-index: -1;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  max-width: 63%;
+  max-height: 47%;
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* ------------------------- Frequently --------------------------- */
+
+.faq {
+  font-family: "Poppins", sans-serif;
+  /* border: 2px solid red; */
+  width: 80vw;
+  margin: auto;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.fa-plus {
+  font-size: 2rem;
+}
+
+.fa-xmark {
+  font-size: 2rem;
+  display: none;
+}
+
+.faq-question {
+  margin: 0.5rem 0;
+  color: white;
+}
+.faq-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2d2d2d;
+  padding: 1.4rem;
+}
+.faq-ans {
+  text-align: left;
+  background-color: #2d2d2d;
+  padding: 1.4rem;
+  margin-top: 2px;
+  display: none;
+}
+
+.faq-box:hover {
+  background-color: #414141;
+  color: white;
+  transition: all .4s ease-in-out;
+}
+
+.faq .sign-process {
+  margin: auto;
+}
+
+.faq p {
+  font-size: larger;
+  margin: 3.5rem 0 1.5rem 0;
+}
+
+/* ------------------------- Footer --------------------------- */
+
+footer {
+  /* border: 2px solid yellowgreen; */
+  color: #b3b3b3;
+  width: 80vw;
+  margin: auto;
+  padding: 4rem 0;
+}
+
+footer p {
+  color: #b3b3b3;
+}
+
+footer a {
+  color: #b3b3b3;
+}
+
+footer .eng-btn {
+  margin: 1.7rem 0;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.2rem;
+  margin-top: 1.7rem;
+}
+
+
+/* ------------------------- Media Query --------------------------- */
+
+@media screen and (max-width : 1250px) {
+  #nav, #main-content, .feachers, .faq, footer {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width : 1077px) {
+  .main-heading {
+    font-size: 2.4rem;
+  }
+  .feacher-Img img {
+    width: 43vw;
+}
+}
+
+@media screen and (max-width : 968px) {
+  #main-content {
+padding: 0;
+  }
+  .main-heading {
+    font-size: 1.8rem;
+  }
+  h2{
+  font-size: 1rem;
+  }
+  .feachers {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .heading {
+    font-size: 2rem;
+
+  }
+  .feacher-Img img {
+    width: 65vw;
+}
+
+.feachers-2{
+flex-direction: column-reverse;
+}
+}
+
+@media screen and (max-width : 783px) {
+.sign-process {
+flex-wrap: wrap;
+}
+.sign-process input {
+width: 80%;
+}
+#grid {
+  grid-template-columns: 1fr 1fr;
+}
+}
+@media screen and (max-width : 494px) {
+  #nav{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+#nav .eng-btn{
+  display: none;
+}
+.main-heading {
+  font-size: 1.4rem;
+}
+.heading {
+  font-size: 1.6rem;
+}
+h4, .faq p  {
+  font-size: 1rem;
+}
+}
+
+@media screen and (max-width : 322px) {
+  .sign-process .started {font-size: 1rem;
+    padding: 0.8rem;
+    width: auto;
+  }
+  .icon{
+  font-size: 1rem;
+  margin: auto 3px;
+  }
+}
